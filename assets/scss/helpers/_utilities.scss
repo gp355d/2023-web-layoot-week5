@@ -38,9 +38,6 @@
 .h-100{
   height: 100%;
 }
-.title-style{
-  border-left: 8px solid $text-color2;
-}
 
 $spacer: 4px;
 $spacer-types: (
@@ -100,63 +97,5 @@ $spacer-types: (
   }
   .pr-#{$name} {
     padding-right: $spacer;
-  }
-}
-
-@include pad {
-  @each $name, $spacer in $spacer-types {
-    .mt-md-#{$name} {
-      margin-top: $spacer;
-    }
-    .mb-md-#{$name} {
-      margin-bottom: $spacer;
-    }
-    .ml-md-#{$name} {
-      margin-left: $spacer;
-    }
-    .mr-md-#{$name} {
-      margin-right: $spacer;
-    }
-    .pt-md-#{$name} {
-      padding-top: $spacer;
-    }
-    .pb-md-#{$name} {
-      padding-bottom: $spacer;
-    }
-    .pl-md-#{$name} {
-      padding-left: $spacer;
-    }
-    .pr-md-#{$name} {
-      padding-right: $spacer;
-    }
-  }
-}
-
-@include mobile {
-  @each $name, $spacer in $spacer-types {
-    .mt-sm-#{$name} {
-      margin-top: $spacer;
-    }
-    .mb-sm-#{$name} {
-      margin-bottom: $spacer;
-    }
-    .ml-sm-#{$name} {
-      margin-left: $spacer;
-    }
-    .mr-sm-#{$name} {
-      margin-right: $spacer;
-    }
-    .pt-sm-#{$name} {
-      padding-top: $spacer;
-    }
-    .pb-sm-#{$name} {
-      padding-bottom: $spacer;
-    }
-    .pl-sm-#{$name} {
-      padding-left: $spacer;
-    }
-    .pr-sm-#{$name} {
-      padding-right: $spacer;
-    }
   }
 }

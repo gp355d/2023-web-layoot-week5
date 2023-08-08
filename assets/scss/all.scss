@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
-@import './layout/header.scss';
+@import "./helpers/variables";
+@import "./base";
+@import './layout/nav.scss';
 @import './layout/footer.scss';
 @import './pages/index.scss';
 @import "../../node_modules/bootstrap";

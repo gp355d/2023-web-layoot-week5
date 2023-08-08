@@ -1,17 +1,8 @@
-*,*::before,*::after{
-  box-sizing: border-box;
-}
 body{
-  font-family: 'Noto Sans TC', 'Roboto';
+  font-family: 'Lato','Roboto', sans-serif !important;
   line-height: 1.5;
+  color: $text-color !important;
 }
 img{
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-a{
-  text-decoration: none;
-  display: block;
+  object-fit: cover !important;
 }
