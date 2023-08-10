@@ -32,6 +32,7 @@ nav {
 .style {
   font-family: 'Lato';
   line-height: 1.1875rem;
+  padding: 12px !important;
 }
 
 .user-info {
@@ -92,7 +93,6 @@ nav {
 
 .list-group-item {
   border: 0 !important;
-  // border-top: 1px solid $border-color !important;
   border-left: 1px solid $border-color !important;
   border-right: 1px solid $border-color !important;
 }
@@ -112,10 +112,6 @@ nav {
 .list-group-item:last-child {
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-}
-
-.style {
-  padding: 12px !important;
 }
 
 .assessment-list {
@@ -383,4 +379,45 @@ nav {
 }
 .delete-acount{
   padding-bottom: 24px;
+}
+//view
+.manger-info{
+  padding: 32px !important;
+}
+.manger-photo{
+  width: 141px;
+  height: 141px;
+}
+.level{
+  font-size: 1.1875rem;
+  line-height: 1.5rem;
+}
+.manger-name{
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+}
+.manger-mail{
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: $text-color2;
+}
+.expand_more {
+  display: none;
+}
+.expand_less {
+  display: inline-block;
+}
+.collapsed .expand_more {
+  display: inline-block;
+}
+
+.collapsed .expand_less {
+  display: none;
+}
+.hash{
+  line-height: 1.1875rem;
+}
+.status{
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
 }
