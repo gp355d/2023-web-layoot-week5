@@ -14,112 +14,276 @@
 <body>
   <div class="d-flex">
     <%- include('./layout/nav'); -%>
-      <div class="content h-100">
-        <div class="content-top d-flex mb-3">
-          <div class="left d-flex align-items-center">
-            <h2 class="fw-bold mb-0">Admin</h2>
-            <a href="#" class="d-flex text-decoration-none text-success fw-bold" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              <span class="material-symbols-outlined me-2">
-                add
-              </span>
-              <span class="text-dark fw-bold">Add New Admin</span>
-            </a>
+      <div class="content d-flex flex-column justify-content-between">
+        <div>
+          <div class="content-top d-flex mb-3">
+            <div class="left d-flex align-items-center">
+              <h2 class="fw-bold mb-0">Admin</h2>
+              <a href="#" class="d-flex text-decoration-none text-success fw-bold" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <span class="material-symbols-outlined me-2">
+                  add
+                </span>
+                <span class="text-dark fw-bold">Add New Admin</span>
+              </a>
+            </div>
+            <div class="right ms-auto d-flex align-items-center">
+              <a href="#" class="me-4">
+                <span class="material-icons">
+                  search
+                </span>
+              </a>
+              <a class="fun2" href="#">
+                <span class="material-icons">
+                  notifications
+                </span>
+              </a>
+            </div>
           </div>
-          <div class="right ms-auto d-flex align-items-center">
-            <a href="#" class="me-4">
-              <span class="material-icons">
-                search
-              </span>
-            </a>
-            <a class="fun2" href="#">
-              <span class="material-icons">
-                notifications
-              </span>
-            </a>
-          </div>
-        </div>
-        <table class="table">
-          <thead class="border-dark">
-            <tr class="text-dark">
-              <th scope="col">
-                <div class="d-flex align-items-center">
-                  <span>ID</span>
-                  <span class="material-icons text-success">
-                    arrow_downward
-                  </span>
-                </div>
-              </th>
-              <th scope="col">Name</th>
-              <th scope="col">Email</th>
-              <th scope="col" colspan="2">Verified</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">#1</th>
-              <td>Emir Wicks</td>
-              <td>emir.wicks@mail.com</td>
-              <td colspan="2">
-                <div class="d-flex justify-content-between">
-                  <span>Yes</span>
-                  <div>
-                    <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                      <span class="material-icons visibility">
-                        visibility
-                      </span>
-                    </a>
-                    <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                      <span class="material-icons">
-                        edit
-                      </span>
-                    </a>
+          <table class="table align-middle mb-0">
+            <thead class="border-dark">
+              <tr class="text-dark pb-1">
+                <th scope="col">
+                  <div class="d-flex align-items-center">
+                    <span>ID</span>
+                    <span class="material-icons text-success">
+                      arrow_downward
+                    </span>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#2</th>
-              <td>Zaina Goldsmith</td>
-              <td>zaina.goldsmith@mail.com</td>
-              <td colspan="2">
-                <div class="d-flex justify-content-between">
-                  <span>Yes</span>
-                  <a class="fun2" href="#">
-                    <span class="material-icons visibility">
-                      visibility
-                    </span>
-                    <span class="material-icons">
-                      edit
-                    </span>
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#3</th>
-              <td>Mahima Lopez</td>
-              <td>mahima.lopez@mail.com</td>
-              <td colspan="2">
-                <div class="d-flex justify-content-between">
-                  <span>Yes</span>
-                  <a class="fun2" href="#">
-                    <span class="material-icons visibility">
-                      visibility
-                    </span>
-                    <span class="material-icons">
-                      edit
-                    </span>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <nav class="bg-body d-flex justify-content-end w-100">
-          <ul class="pagination">
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col" colspan="2">Verified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row"><div class="td-content mb-0">#1</div></td>
+                <td><div class="td-content mb-0">Emir Wicks</div></td>
+                <td><div class="td-content mb-0">emir.wicks@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row"><div class="td-content mb-0">#2</div></td>
+                <td><div class="td-content mb-0">Zaina Goldsmith</div></td>
+                <td><div class="td-content mb-0">zaina.goldsmith@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#3</td>
+                <td><div class="td-content mb-0">Mahima Lopez</div></td>
+                <td><div class="td-content mb-0">mahima.lopez@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#4</td>
+                <td><div class="td-content mb-0">Pharrell Murray</div></td>
+                <td><div class="td-content mb-0">pharrell.murray@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#5</td>
+                <td><div class="td-content mb-0">Annika Mcbride</div></td>
+                <td><div class="td-content mb-0">annika.mcbride@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#6</td>
+                <td><div class="td-content mb-0">Fatimah Clark</div></td>
+                <td><div class="td-content mb-0">fatimah.clark@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#7</td>
+                <td><div class="td-content mb-0">Klaudia Rhodes</div></td>
+                <td><div class="td-content mb-0">klaudia.rhodes@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#8</td>
+                <td><div class="td-content mb-0">Tillie Lucero</div></td>
+                <td><div class="td-content mb-0">tillie.lucero@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#9</td>
+                <td><div class="td-content mb-0">Sabrina Stephenson</div></td>
+                <td><div class="td-content mb-0">sabrina.stephenson@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">#10</td>
+                <td><div class="td-content mb-0">Annie Smith</div></td>
+                <td><div class="td-content mb-0">annie.smith@mail.com</div></td>
+                <td colspan="2">
+                  <div class="align-items-center d-flex justify-content-between">
+                    <span>Yes</span>
+                    <div>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <span class="material-icons visibility">
+                          visibility
+                        </span>
+                      </a>
+                      <a class="fun2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav class="bg-body d-flex justify-content-end w-100 pt-0 align-items-end" style="min-height: 0%;">
+          <ul class="pagination mb-0">
             <li class="page-item">
-              <a class="page-link s p-1 d-flex align-items-center text-success" href="#" aria-label="Previous">
+              <a class="page-link chevron_left p-1 d-flex align-items-center text-success" href="#" aria-label="Previous">
                 <span class="material-icons">chevron_left</span>
               </a>
             </li>
@@ -133,6 +297,7 @@
             </li>
           </ul>
         </nav>
+
       </div>
       <!-- add Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -150,7 +315,7 @@
                   <input type="email" class="form-control border-dark py-3" id="exampleInputEmail1"
                     aria-describedby="emailHelp">
                 </div>
-                <div class="test">
+                <div class="mail-input-style">
                   <label for="exampleInputPassword1" class="form-label mb-1 label-title">Email</label>
                   <input type="email" class="form-control border-dark py-3" id="exampleInputPassword1">
                 </div>
@@ -175,32 +340,32 @@
               <div class="permissions">
                 <h3 class="mb-3 title fw-bold">Custom Access</h3>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" value="" id="lecture">
+                  <label class="form-check-label" for="lecture">
                     Lecture
                   </label>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <input class="form-check-input" type="checkbox" value="" id="Coupon">
+                  <label class="form-check-label" for="Coupon">
                     Coupon
                   </label>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" value="" id="Message">
+                  <label class="form-check-label" for="Message">
                     Message
                   </label>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <input class="form-check-input" type="checkbox" value="" id="Setting">
+                  <label class="form-check-label" for="Setting">
                     Setting
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <input class="form-check-input" type="checkbox" value="" id="Task">
+                  <label class="form-check-label" for="Task">
                     Task Menu
                   </label>
                 </div>
@@ -225,13 +390,13 @@
               <form>
                 <h3 class="mb-3 title fw-bold">Account</h3>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label mb-1 label-title">Name</label>
-                  <input type="email" class="form-control border-0 py-3" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" value="1111" disabled>
+                  <label for="editname" class="form-label mb-1 label-title">Name</label>
+                  <input type="email" class="form-control border-0 py-3 readonly" id="editname"
+                    aria-describedby="emailHelp" value="1111" readonly>
                 </div>
                 <div class="test">
-                  <label for="exampleInputPassword1" class="form-label mb-1 label-title">Email</label>
-                  <input type="email" class="form-control border-0 py-3" id="exampleInputPassword1" value="xxx@gmail.com" disabled>
+                  <label for="edutemail" class="form-label mb-1 label-title">Email</label>
+                  <input type="email" class="form-control border-0 py-3 readonly" id="edutemail" value="xxx@gmail.com" readonly>
                 </div>
               </form>
               <h3 class="mb-3 title fw-bold">Verification</h3>
@@ -257,32 +422,32 @@
               <div class="permissions edit">
                 <h3 class="mb-3 title fw-bold">Custom Access</h3>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" value="" id="editLecture">
+                  <label class="form-check-label" for="editLecture">
                     Lecture
                   </label>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <input class="form-check-input" type="checkbox" value="" id="editCoupon">
+                  <label class="form-check-label" for="editCoupon">
                     Coupon
                   </label>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" value="" id="editMessage">
+                  <label class="form-check-label" for="editMessage">
                     Message
                   </label>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <input class="form-check-input" type="checkbox" value="" id="editSetting">
+                  <label class="form-check-label" for="editSetting">
                     Setting
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <input class="form-check-input" type="checkbox" value="" id="editTask">
+                  <label class="form-check-label" for="editTask">
                     Task Menu
                   </label>
                 </div>
@@ -335,8 +500,9 @@
                   </div>
                   <div class="collapse" id="collapseExample">
                     <div class="d-flex justify-content-between">
-                      <button type="button" class="btn btn-outline-danger me-3">deactivate</button>
-                      <button type="button" class="btn btn-success">Edit</button>
+                      <button type="button" class="btn btn-outline-danger me-3">Deactivate</button>
+                      <a class="btn btn-success" href="#" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal3">Edit</a>
                     </div>
                   </div>
                   <!-- <div class="accordion" id="accordionExample">
@@ -363,7 +529,6 @@
         </div>
       </div>
   </div>
-  <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
 </body>
 
