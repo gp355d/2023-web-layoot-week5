@@ -32,6 +32,7 @@ nav {
 .style {
   font-family: 'Lato';
   line-height: 1.1875rem;
+  padding: 12px !important;
 }
 
 .user-info {
@@ -92,7 +93,6 @@ nav {
 
 .list-group-item {
   border: 0 !important;
-  // border-top: 1px solid $border-color !important;
   border-left: 1px solid $border-color !important;
   border-right: 1px solid $border-color !important;
 }
@@ -112,10 +112,6 @@ nav {
 .list-group-item:last-child {
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-}
-
-.style {
-  padding: 12px !important;
 }
 
 .assessment-list {
@@ -235,152 +231,4 @@ nav {
 
 .ck-editor__editable_inline {
   min-height: 400px;
-}
-
-//admin
-.fun2 {
-  span {
-    color: $text-color;
-
-    &:hover {
-      color: $text-color3;
-    }
-  }
-}
-.visibility{
-  margin-right: 25px;
-}
-.page-link.s {
-  line-height: 1.25rem !important;
-
-}
-
-.page-link {
-  font-size: 1rem;
-  color: $text-color !important;
-  line-height: 1.1875rem !important;
-  padding-top: 6px !important;
-  padding-bottom: 7px !important;
-  padding-right: 11.5px !important;
-  padding-left: 11.5px !important;
-  border: 1px solid $text-color3 !important;
-
-  &:hover {
-    color: #fff !important;
-    background-color: $text-color3 !important;
-  }
-
-  .material-icons {
-    font-size: 1.5rem;
-  }
-}
-.page-link.active{
-  background-color: $text-color3 !important;
-  color: #fff !important;
-}
-.page-item:first-child .page-link {
-  border-top-left-radius: 2px !important;
-  border-bottom-left-radius: 2px !important;
-}
-
-.page-item:last-child .page-link {
-  border-top-right-radius: 2px !important;
-  border-bottom-right-radius: 2px !important;
-}
-
-.table>:not(caption)>*>* {
-  padding: 19px 8px 17px !important;
-}
-.adduser{
-  padding: 32px !important;
-}
-.modal-header{
-  h5{
-    font-size: 1.5rem;
-    line-height: 1.8125rem;
-  }
-  .btn-close {
-    width: 24px;
-    height: 24px;
-    padding: 0 !important;
-  }
-}
-.modal-body {
-  padding: 0 2rem !important;
-  // min-height: 1200px;
-  .title{
-    padding-top: 24.5px;
-    font-size: 1.25rem;
-  }
-}
-.test{
-  padding-bottom: 24.5px;
-  border-bottom: 1px solid $border-color;
-}
-.send-verification{
-  padding-bottom: 24.5px;
-  border-bottom: 1px solid $border-color;
-  button{
-    &:hover{
-      border: 1px solid $text-color;
-    }
-  }
-}
-.select-level{
-  padding-bottom: 24.5px;
-  border-bottom: 1px solid $border-color;
-}
-.label-title{
-  font-size: 0.875rem;
-  line-height: 1.0625rem;
-}
-.verification-status{
-  line-height: 1.1875rem;
-}
-.modal-footer{
-  padding: 16px 32px !important;
-}
-.btn{
-  padding: 8px 32px !important;
-  border-radius: 2px !important;
-}
-.form-control{
-  border-radius: 2px !important;
-  line-height: 1.1875rem !important;
-}
-.form-select {
-  border-radius: 2px !important;
-  line-height: 1.1875rem !important;
-}
-.form-check-input {
-  border: 2px solid $text-color !important;
-  border-radius: 2px !important;
-}
-.permissions{
-  padding-bottom: 32px;
-}
-//edit modal
-.verification-date{
-  font-size: 0.875em;
-  line-height: 1.0625rem;
-}
-.send-verification.disabled{
-  button{
-    border: 1px solid $border-color;
-    color: $border-color;
-  }
-}
-.permissions.edit{
-  padding-bottom: 24.5px;
-  border-bottom: 1px solid $border-color;
-}
-.delete{
-  .btn{
-    &:hover{
-      color: #fff !important;
-    }
-  }
-}
-.delete-acount{
-  padding-bottom: 24px;
 }
