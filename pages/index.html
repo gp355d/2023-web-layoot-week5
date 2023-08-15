@@ -123,8 +123,8 @@
                 </li>
               </ul>
             </div>
-            <div class="col-8 d-flex flex-column justify-content-between">
-              <div class="tab-content" id="nav-tabContent">
+            <div class="col-8">
+              <div class="tab-content  d-flex flex-column justify-content-between min-vh-100" id="nav-tabContent">
                 <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                   <!-- <div class="list-group d-flex mb-0 assessment-list justify-content-between">
                     <a class="list-group-item style list-group-item-action d-flex justify-content-between align-items-center border-bottom-0" id="list-home-list"
@@ -165,7 +165,7 @@
                           </div>
                         </li>
                       </ul>
-                      <!-- <div class="content-info">
+                      <div class="content-info e1">
                         <div class="d-flex">
                           <img class="rounded-circle me-2" src="../assets/images/andychen.jpeg" alt="teacher-photo">
                           <div>
@@ -186,10 +186,12 @@
                         <div class="content-description answer">
                           <p class="question mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can: <br><br>　• adjust the <code class="text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-success">middle</code> ) or <br>　• change the <code class="text-success">display</code> so it isn’t inline.</p>
                         </div>
-                      </div> -->
+                      </div>
                     </div>
                   </div>
-                  <div id="editor" class="editor">This is some sample content.</div>
+                  <div class="content-info2 d-none">
+                    <div id="editor" class="editor">This is some sample content.</div>
+                  </div>
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
                 </div>
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...
@@ -215,6 +217,10 @@
                     <a href="#" class="btn btn-outline-success me-3 mark">Mark as read</a>
                     <a href="#" class="btn btn-success reply">Reply</a>
                   </div>
+                  <div class="action2 d-none">
+                    <a href="#" class="btn btn-outline-success me-3 mark canacel-btn">Cancel</a>
+                    <a href="#" class="btn btn-success reply">Reply</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -224,6 +230,7 @@
       </div>
   </div>    
   <!-- <%- include('./layout/footer'); -%> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
   <script>
     ClassicEditor
@@ -237,6 +244,22 @@
       .catch(error => {
         console.error(error);
       });
+  </script>
+  <script>
+    $('.reply').click(function(e){
+      e.preventDefault();
+      $('.content-info.e1').addClass('d-none');
+      $('.content-info2').removeClass('d-none');
+      $('.action').addClass('d-none');
+      $('.action2').removeClass('d-none');
+    })
+    $('.canacel-btn').click(function(e){
+      e.preventDefault();
+      $('.content-info.e1').removeClass('d-none');
+      $('.content-info2').addClass('d-none');
+      $('.action').removeClass('d-none');
+      $('.action2').addClass('d-none');
+    })
   </script>
   <script type="module" src="../main.js"></script>
 </body>
