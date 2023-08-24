@@ -27,6 +27,10 @@ nav {
       border-left: 4px solid $text-color3;
     }
   }
+  a.active{
+    color: $text-color3;
+    border-left: 4px solid $text-color3;
+  }
 }
 
 .style {
@@ -205,7 +209,12 @@ nav {
     }
   }
 }
-
+code{
+  font-family: 'Roboto', sans-serif !important;
+}
+.more:hover{
+  color: $text-color3 !important;
+}
 .footer {
   margin-bottom: 32px;
 }

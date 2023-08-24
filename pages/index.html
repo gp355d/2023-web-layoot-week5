@@ -138,7 +138,7 @@
                         <h4 class="assessment-list mb-1">Chapter Assignment 2 / HTML&CSS</h4>
                         <h3 class="assessment-title fw-bold mb-0">Please check this file for me, thanks!</h3>
                       </div>
-                      <span class="material-icons">more_vert</span>
+                      <a class="more text-black" href="#"><span class="material-icons">more_vert</span></a>
                     </h5>
                     <div class="card-body">
                       <ul class="list-unstyled">
@@ -184,7 +184,7 @@
                           </div>
                         </div>
                         <div class="content-description answer">
-                          <p class="question mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can: <br><br>　• adjust the <code class="text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-success">middle</code> ) or <br>　• change the <code class="text-success">display</code> so it isn’t inline.</p>
+                          <p class="question mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can: <br><br>　• adjust the <code class="text-success bg-light">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-success bg-light">middle</code> ) or <br>　• change the <code class="text-success bg-light">display</code> so it isn’t inline.</p>
                         </div>
                       </div>
                     </div>
@@ -246,6 +246,9 @@
       });
   </script>
   <script>
+    //  $('.menu a').click(function(){
+    //   $(this).toggleClass('active');
+    //  })
     $('.reply').click(function(e){
       e.preventDefault();
       $('.content-info.e1').addClass('d-none');
